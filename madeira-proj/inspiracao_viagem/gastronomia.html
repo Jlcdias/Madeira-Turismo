@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Gastronomia</title>
+</head>
+<body class="mex-mex">
+
+<!-- ATENÇÃO O HTML DESTA PÁGINA ESTA TODO REPLICADO EM TODA A SECÇÃO DO MENU "INSPIRAÇÃO DE VIAGEM" -->
+<!-- Funcionalidade Resumo -->
+    <section class="section-resumo-mex">
+        <div class="container-mex">
+            <h1>Gastronomia</h1>
+            <p>Experiências autênticas, apenas pura aventura.</p>
+            <br>
+            <a href="#lista" class="btn-mex">Ver Destinos</a>
+        </div>
+    </section>
+<!-- LISTA DE ATIVIDADES  -->
+    <section id="lista" class="section-lista-mex">
+        <div class="container-mex">
+            <h2>Lista de Aventuras</h2>
+            <div class="grid-mex">
+                <div class="card-mex">
+                    <img src="../img/carrinhos cesto.jpg" alt="carrinhos monte">
+                    <div class="card-content-mex">
+                        <h3>Carrinos de Cesto</h3>
+                        <p>Visite o Monte.E aproveita está descida fantastica de montanha da madeira.</p>
+                        <a href="#detalhe-italia" class="btn-mex full-mex">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="card-mex">
+                    <img src="../img/golfinhos.jpg" alt="golfinhos">
+                    <div class="card-content-mex">
+                        <h3>Viagem com os crostácios</h3>
+                        <p>Águas cristalinas e templos antigos.</p>
+                        <a href="#detalhe-italia" class="btn-mex full-mex">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="card-mex">
+                    <img src="../img/Tours jipe madeira.jpeg" alt="Tours Jipe">
+                    <div class="card-content-mex">
+                        <h3>Tours</h3>
+                        <p>Desligue-se de tudo nas montanhas.</p>
+                        <a href="#detalhe-italia" class="btn-mex full-mex">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECÇÃO DETALHE/DESCRIÇÃO -->
+    <section id="detalhe-madeira" class="section-detalhe-mex container-mex">
+        <div class="layout-detalhe-mex">
+            
+            <div>
+                <h2>Exploração deste magnifico canto do mundo.</h2>
+                <img src="../img/Funchal.avif" class="img-detalhe-mex" alt="Detalhe">
+                <p class="mt20-mex">
+                    Explore tudo o que este arquipélago tem para lhe oferecer. São cenários naturais arrebatadores, águas cristalinas, tradições seculares, sabores genuínos e muita vontade de o receber. 
+                    O que é que vai querer fazer primeiro?
+                </p>
+
+                <div class="mt40-mex">
+                    <h3>Perguntas Frequentes</h3>
+<!-- SECÇÃO PERGUNTAS FREQUENTES -->                    
+                    <details>
+                        <summary>Qual a melhor época para ir?</summary>
+                        <p>Recomendamos entre Abril e Outubro para evitar as chuvas e aproveitar o calor moderado.</p>
+                    </details>
+
+                    <details>
+                        <summary>Inclui voos?</summary>
+                        <p>Não, o pacote inclui apenas alojamento, guia local e transportes terrestres entre as vilas.</p>
+                    </details>
+
+                    <details>
+                        <summary>É acessível a cadeiras de rodas?</summary>
+                        <p>Devido à topografia acidentada e muitas escadas nas vilas, infelizmente não é recomendado.</p>
+                    </details>
+                </div>
+                <!-- SECÇÃO COMENTARIOS -->
+                <div class="comentarios-area-mex">
+                    <h3>Opiniões dos Viajantes</h3>
+                    
+                    <div class="comentario-mex">
+                        <strong>João S.</strong> <span class="span-mex">★★★★★</span>
+                        <p>Incrível! As cores das casas são exatamente como nas fotos.</p>
+                    </div>
+                    
+                    <div class="comentario-mex">
+                        <strong>Ana P.</strong> <span class="span-mex">★★★★☆</span>
+                        <p>Muito bonito, mas preparem-se para andar muito a pé.</p>
+                    </div>
+<!-- SECÇÃO ADICIONAR COMENTARIOS -->
+                    <div class="comment-form-mex">
+                        <h4>Deixe o seu comentário</h4>
+                        <form onsubmit="return false;"> <input type="text" placeholder="O seu nome">
+                            <textarea rows="3" placeholder="A sua experiência..."></textarea>
+                            <button class="btn-mex">Publicar (Demo)</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+<!-- SECÇÃO/ COM LISTA DE ATIVIDADES ADICIONAR AO CARRINHO E FAVORITOS -->
+            <div>
+                <div class="box-compra-mex">
+                    <h3>Personalize o seu Pacote</h3>
+                    <p>Selecione os extras:</p>
+
+                    <div class="item-atividade-mex">
+                        <div>
+                            <strong>Passeio de Barco</strong><br>
+                            <small>2 Horas</small>
+                        </div>
+                        <div class="flex-center-mex">
+                            <input type="checkbox" id="fav1" class="check-fav-mex">
+                            <label for="fav1" class="label-fav-mex">❤</label>
+                            
+                            <button class="btn-mex preco">+ 40€</button>
+                        </div>
+                    </div>
+
+                    <div class="item-atividade-mex">
+                        <div>
+                            <strong>Prova de Vinhos</strong><br>
+                            <small>Guia Sommelier</small>
+                        </div>
+                        <div id="guia-mex">
+                            <input type="checkbox" id="fav2" class="check-fav-mex">
+                            <label for="fav2" class="label-fav-mex">❤</label>
+                            <button class="btn-mex preco">+ 25€</button>
+                        </div>
+                    </div>
+
+                    <div class="item-atividade-mex">
+                        <div>
+                            <strong>Jantar Romântico</strong><br>
+                            <small>Vista Mar</small>
+                        </div>
+                        <div id="guia-mex">
+                            <input type="checkbox" id="fav3" class="check-fav-mex">
+                            <label for="fav3" class="label-fav-mex">❤</label>
+                            <button class="btn-mex preco">+ 80€</button>
+                        </div>
+                    </div>
+
+                    <hr class="hr-mex">
+                    
+                    <button class="btn-mex full-mex large-mex" >Reservar Agora</button>
+                    <p id="cancelamento">Cancelamento grátis até 24h antes.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

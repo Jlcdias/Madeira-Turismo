@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Privacidade</title>
+</head>
+<body id="privacidade">
+<!-- QUALQUER BOTÃO SERVE MERAMENTE PARA RESPRESENTAÇÃO GRÁFICA, PODENDO APENAS ALGUNS DELES TER HREF QUE RETORNA PARA O INICIO DA PÁGINA -->
+<!-- CABEÇALHO -->
+    <header class="header-hero-privacidade">
+        <h1 class="titulo-header-privacidade">Área Pessoal & Privacidade</h1>
+        <p class="subtitulo-header-privacidade">Gerencie os seus dados e conheça a nossa comunidade</p>
+    </header>
+<!-- DEFENIMOS UM MAIN PARA INDICAR O CONTEUDO DO INTERIOR DA PAGINA -->
+    <main class="container-privacidade">
+        <!-- SECÇÃO DADOS PESSOAIS -->
+        <section class="card-branco-privacidade">
+            <h2 class="titulo-seccao-privacidade">Preferências de Privacidade (RGPD)</h2>
+            <p class="p_privacidade">Controle como utilizamos os seus dados. As alterações são guardadas automaticamente.</p>
+            
+            <ul class="lista-consentimento-privacidade">
+                
+                <li class="item-consentimento-privacidade">
+                    <div class="info-consentimento-privacidade">
+                        <h4>Dados Essenciais</h4>
+                        <p>Necessários para reservas e faturação.</p>
+                    </div>
+                    <label class="switch-container-privacidade">
+                        <!-- REPLICADO MAIS ABAIXO :AQUI CRIO O BUTÃO PARA O INPUT COM A DEFENIÇÃO CHECKED DISABLED PARA O UTILIZADOR NÃO PODER ALTERAR A POSIÇÃO -->
+                        <input type="checkbox" class="input-check-privacidade" checked disabled>
+                        <span class="slider-privacidade" ></span>
+                    </label>
+                </li>
+
+                <li class="item-consentimento-privacidade">
+                    <div class="info-consentimento-privacidade">
+                        <h4>Marketing & Promoções</h4>
+                        <p>Receba ofertas exclusivas por email.</p>
+                    </div>
+                    <!-- AQUI CRIO UM BOTÃO PARA O UTILIZADOR FAZER CHECK, MAS QUANDO FAÇO HOOVER APARECE PROIBIDO FAZENDO COM O UTILIZADOR PENSE QUE NAO PODE ALTERAR , PREPOSITADO -->
+                    <label class="switch-container-privacidade">
+                        <input type="checkbox" class="input-check-privacidade" checked>
+                        <span class="slider-privacidade"></span>
+                    </label>
+                </li>
+
+                <li class="item-consentimento-privacidade">
+                    <div class="info-consentimento-privacidade">
+                        <h4>Partilha com Parceiros</h4>
+                        <p>Permitir que hotéis parceiros enviem ofertas.</p>
+                    </div>
+                    <label class="switch-container-privacidade">
+                        <input type="checkbox" class="input-check-privacidade">
+                        <span class="slider-privacidade"></span>
+                    </label>
+                </li>
+
+            </ul>
+        </section>
+<!-- SECÇÃO ATUALIZAR EMAIL -->
+        <section class="card-branco-privacidade">
+            <h2 class="titulo-seccao-privacidade">Gestão de Email</h2>
+            <p class="p_privacidade">Atualize o endereço onde recebe os seus vouchers e confirmações.</p>
+            
+            <form class="form-email-privacidade" action="#" onsubmit="return false;">
+                <input type="email" class="input-email-privacidade" value="cliente@exemplo.com" placeholder="O seu novo email">
+                <button class="btn-salvar-privacidade">Atualizar Email</button>
+            </form>
+            
+            <div class="informa_priva">
+                * Enviaremos um link de confirmação para o novo endereço.
+            </div>
+        </section>
+       <!-- SECÇÃO LISTA Alumni -->
+        <section class="card-branco-privacidade">
+            <h2 class="titulo-seccao-privacidade">Comunidade Alumni</h2>
+            <p class="p_privacidade">Veja quem já viajou a ilha conosco. <a href="#" style="color:#e67e22;">Junte-se ao grupo!</a></p>
+
+            <div class="grid-alumni-privacidade">
+                
+                <div class="card-alumni-privacidade">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Foto" class="avatar-alumni-privacidade">
+                    <span class="nome-alumni-privacidade">Carlos Mendes</span>
+                    <span class="viagem-alumni-privacidade">📍 Costa Norte</span>
+                </div>
+
+                <div class="card-alumni-privacidade">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Foto" class="avatar-alumni-privacidade">
+                    <span class="nome-alumni-privacidade">Sofia Costa</span>
+                    <span class="viagem-alumni-privacidade">📍 Rota crostácios</span>
+                </div>
+
+                <div class="card-alumni-privacidade">
+                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Foto" class="avatar-alumni-privacidade">
+                    <span class="nome-alumni-privacidade">Rui Santos</span>
+                    <span class="viagem-alumni-privacidade">📍 Jipes</span>
+                </div>
+
+                <div class="card-alumni-privacidade">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Foto" class="avatar-alumni-privacidade">
+                    <span class="nome-alumni-privacidade">Beatriz Lima</span>
+                    <span class="viagem-alumni-privacidade">📍 Experiência Romantica</span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

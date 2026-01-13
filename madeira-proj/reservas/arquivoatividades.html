@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Arquivo de Atividades</title>
+</head>
+<!-- TODOS OS BOTÕES SÃO APENAS UM EXEMPLO DE ESTILO SEM FUNCIONALIDADES POR FALTA DE JAVA SCRIPT A EXESSAO DOS TAB -->
+<body id="atvrealiz">
+<!-- CABEÇALHO DE ARQUIVO DE ATIVIDADES -->
+    <header class="header-hero-atvrealiz">
+        <h1 class="titulo-atvrealiz">Arquivo de Experiências</h1>
+        <p class="subtitulo-atvrealiz">Reviva os melhores momentos das suas viagens passadas.</p>
+    </header>
+<!-- LISTA PARA FILTRAR POR ANO , APENAS ESTILO VISUAL NAO FIUNCIONAL -->
+    <main class="container-main-atvrealiz">
+
+        <div class="filter-bar-atvrealiz">
+            <span class="label-filter-atvrealiz">Filtrar por Ano:</span>
+            <select class="select-filter-atvrealiz">
+                <option>Todos</option>
+                <option>2023</option>
+                <option>2022</option>
+            </select>
+        </div>
+<!-- UM <ARTICLE> REPRESENTA UMA EXPERIENCIA DENTRO DO MAIN TEMOS DOIS ARTIVLES</ARTICLE> -->
+        <article class="card-archive-atvrealiz">
+            <!-- ESTADO DA EXPERIENCIAS -->
+            <div class="ribbon-status-atvrealiz">Realizado</div>
+            <input type="checkbox" id="exp-1" class="check-expand-atvrealiz">
+            <!-- DESTAQUES -->
+            <div class="card-header-atvrealiz">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Montanha" class="img-thumb-atvrealiz">
+                
+                <div class="header-content-atvrealiz">
+                    <span class="date-badge-atvrealiz">Setembro 2023</span>
+                    <h2 class="title-atvrealiz">Jipes </h2>
+                    <div class="location-atvrealiz">📍 Pico do arieiro</div>
+                    <div class="rating-static-atvrealiz">A sua nota: ★★★★★</div>
+                </div>
+
+                <label for="exp-1" class="label-expand-atvrealiz"></label>
+            </div>
+            <!-- DETALHES DA ATIVIDADE COM Lista/Detalhe(destaques, descrição, itinerário, incluido no serviço , informações e outras sugestões, classificar e comentar) -->
+            <div class="details-wrapper-atvrealiz">
+                <div class="details-inner-atvrealiz">
+                    
+                    <div class="tabs-container-atvrealiz">
+                        <input type="radio" name="tabs1" id="tab1-info" class="tab-rad-atvrealiz" checked>
+                        <input type="radio" name="tabs1" id="tab1-itin" class="tab-rad-atvrealiz">
+                        <input type="radio" name="tabs1" id="tab1-review" class="tab-rad-atvrealiz">
+
+                        <div class="tabs-head-atvrealiz">
+                            <label for="tab1-info" class="tab-lbl-atvrealiz">Detalhes & Info</label>
+                            <label for="tab1-itin" class="tab-lbl-atvrealiz">Itinerário Realizado</label>
+                            <label for="tab1-review" class="tab-lbl-atvrealiz">Sua Avaliação</label>
+                        </div>
+
+                        <div class="tab-content-atvrealiz content-info-atvrealiz">
+                            <div class="grid-overview-atvrealiz">
+                                <!-- DESCRIÇÃO DA ATIVIDADE -->
+                                <div>
+                                    <h3 class="section-title-atvrealiz">Descrição da Atividade</h3>
+                                    <p class="text-desc-atvrealiz">Uma travessia de 5 dias pelos picos mais emblemáticos. Incluiu pernoite em refúgios de montanha e observação de fauna local.</p>
+                                <!-- INCLUIDO NO SERVIÇO -->
+                                    <h3 class="section-title-atvrealiz">Incluído no Serviço</h3>
+                                    <ul class="list-check-atvrealiz">
+                                        <li class="item-check-atvrealiz">Guia de Montanha Certificado</li>
+                                        <li class="item-check-atvrealiz">4 Noites em Refúgio</li>
+                                        <li class="item-check-atvrealiz">Transporte de Bagagem</li>
+                                        <li class="item-check-atvrealiz">Jantares e Pequenos-almoços</li>
+                                    </ul>
+                                </div>
+                                <!-- OUTRAS SUGESTÕES -->
+                                <div class="box-suggestions-atvrealiz">
+                                    <h3 class="section-title-atvrealiz">Recomendado para si:</h3>
+                                    <p style="font-size:0.85rem; margin-bottom:10px;">Com base nesta aventura, pode gostar:</p>
+                                    <a href="#" class="link-sugg-atvrealiz">➔ Descida de cestos</a>
+                                    <a href="#" class="link-sugg-atvrealiz">➔ Degustação de vinho madeira</a>
+                                    <a href="#" class="link-sugg-atvrealiz">➔ Caminhada Ribeiro Frio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITENERÁRIO -->
+                        <div class="tab-content-atvrealiz content-itin-atvrealiz">
+                            <div class="timeline-container-atvrealiz">
+                                <div class="timeline-point-atvrealiz">
+                                    <span class="time-day-atvrealiz">Dia 1: O Início</span>
+                                    Encontro no Funchal e subida ao Refúgio Renclusa.
+                                </div>
+                                <div class="timeline-point-atvrealiz">
+                                    <span class="time-day-atvrealiz">Dia 2: O Pico</span>
+                                    Ascensão ao Pico e travessia do Pico Ruivo.
+                                </div>
+                                <div class="timeline-point-atvrealiz">
+                                    <span class="time-day-atvrealiz">Dia 3-5: O Regresso</span>
+                                    Descida pelos vales verdes até à fronteira com o curral das freiras.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CLASSIFICAÇÃO E COMENTÁRIO -->
+                        <div class="tab-content-atvrealiz content-review-atvrealiz">
+                            <div class="memory-card-atvrealiz">
+                                <span class="quote-icon-atvrealiz">❝</span>
+                                <h3 class="section-title-atvrealiz">A sua memória desta viagem</h3>
+                                <div class="user-rating-display-atvrealiz">★★★★★</div>
+                                <p class="user-comment-atvrealiz">
+                                    "Foi uma experiência desafiante mas incrivelmente recompensadora. A organização foi impecável e o guia (Pedro) foi muito profissional. As vistas no topo do Aneto valem cada gota de suor."
+                                </p>
+                        <!-- DATA DA AVALIAÇÃO -->
+                                <span class="review-date-atvrealiz">Avaliado em: 25 Set 2023</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="card-archive-atvrealiz">
+            
+            <div class="ribbon-status-atvrealiz">Realizado</div>
+            <input type="checkbox" id="exp-2" class="check-expand-atvrealiz">
+
+            <div class="card-header-atvrealiz">
+                <img src="../img/berardo.jpg" alt="Jardim" class="img-thumb-atvrealiz">
+                
+                <div class="header-content-atvrealiz">
+                    <span class="date-badge-atvrealiz">Julho 2022</span>
+                    <h2 class="title-atvrealiz">Jardim Botânico</h2>
+                    <div class="location-atvrealiz">📍 Portugal</div>
+                    <div class="rating-static-atvrealiz">A sua nota: ★★★★☆</div>
+                </div>
+
+                <label for="exp-2" class="label-expand-atvrealiz"></label>
+            </div>
+
+            <div class="details-wrapper-atvrealiz">
+                <div class="details-inner-atvrealiz">
+                    
+                    <div class="tabs-container-atvrealiz">
+                        <input type="radio" name="tabs2" id="tab2-info" class="tab-rad-atvrealiz" checked>
+                        <input type="radio" name="tabs2" id="tab2-itin" class="tab-rad-atvrealiz">
+                        <input type="radio" name="tabs2" id="tab2-review" class="tab-rad-atvrealiz">
+
+                        <div class="tabs-head-atvrealiz">
+                            <label for="tab2-info" class="tab-lbl-atvrealiz">Detalhes & Info</label>
+                            <label for="tab2-itin" class="tab-lbl-atvrealiz">Itinerário Realizado</label>
+                            <label for="tab2-review" class="tab-lbl-atvrealiz">Sua Avaliação</label>
+                        </div>
+
+                        <div class="tab-content-atvrealiz content-info-atvrealiz">
+                            <div class="grid-overview-atvrealiz">
+                                <div>
+                                    <h3 class="section-title-atvrealiz">Descrição</h3>
+                                    <p class="text-desc-atvrealiz">Um passeio a pé pelos jardins, com paragens estratégicas para provar petiscos e vinhos locais.</p>
+                                    
+                                    <ul class="list-check-atvrealiz">
+                                        <li class="item-check-atvrealiz">Guia Local</li>
+                                        <li class="item-check-atvrealiz">1 Degustação</li>
+                                        <li class="item-check-atvrealiz">Prova de Vinhos</li>
+                                    </ul>
+                                </div>
+                                <div class="box-suggestions-atvrealiz">
+                                    <h3 class="section-title-atvrealiz">Experiências Similares:</h3>
+                                    <a href="#" class="link-sugg-atvrealiz">➔ Rota do Pão</a>
+                                    <a href="#" class="link-sugg-atvrealiz">➔ Rota do Vinho </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content-atvrealiz content-itin-atvrealiz">
+                            <div class="timeline-container-atvrealiz">
+                                <div class="timeline-point-atvrealiz">
+                                    <span class="time-day-atvrealiz">10:00 AM</span>
+                                    Ponto de encontro na Praça .
+                                </div>
+                                <div class="timeline-point-atvrealiz">
+                                    <span class="time-day-atvrealiz">12:30 PM</span>
+                                    Almoço de petiscos.
+                                </div>
+                                <div class="timeline-point-atvrealiz">
+                                    <span class="time-day-atvrealiz">15:00 PM</span>
+                                    Degustação.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content-atvrealiz content-review-atvrealiz">
+                            <div class="memory-card-atvrealiz">
+                                <span class="quote-icon-atvrealiz">❝</span>
+                                <h3 class="section-title-atvrealiz">A sua memória desta viagem</h3>
+                                <div class="user-rating-display-atvrealiz">★★★★☆</div>
+                                <p class="user-comment-atvrealiz">s
+                                    "Muito saboroso e divertido. O único ponto negativo foi o calor intenso na subida ao Monte, mas a comida compensou."
+                                </p>
+                                <span class="review-date-atvrealiz">Avaliado em: 15 Jul 2022</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>

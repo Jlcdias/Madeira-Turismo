@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Dados Pessoais</title>
+</head>
+<body id="dadpess">
+
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="header-hero-dadpes">
+        <h1 class="titulo-dadpes">O Meu Perfil/ Dados Pessoais</h1>
+        <p class="subtitulo-dadpes">Mantenha os seus dados atualizados para uma viagem tranquila</p>
+    </header>
+
+    <main class="container-dadpes">
+        
+        <div class="layout-grid-dadpes">
+            <!-- MEMBRO -->
+            <aside class="coluna-lateral-dadpes">
+                <div class="card-dadpes perfil-wrapper-dadpes">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Foto Perfil" class="avatar-img-dadpes">
+                    
+                    <span class="nome-display-dadpes">João Dias</span>
+                    <span class="badge-membro-dadpes">Membro Gold</span>
+                    
+                    <br>
+                    <a href="#" class="btn-upload-dadpes">Alterar Foto</a>
+
+                    <hr class="separador-dadpes">
+
+                    <div class="info-sidebar-dadpes">
+                        <p class="label-dadpes">Email Principal</p>
+                        <div class="info-item-dadpes info-margem-dadpes">joao@exemplo.com</div>
+                        
+                        <p class="label-dadpes">Telefone</p>
+                        <div class="info-item-dadpes">
+                            +351 910 000 000
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- SECÇÃO INFORMAÇÃO BIOGRAFICA -->
+            <section class="coluna-conteudo-dadpes">
+                <form action="#" >
+
+                    <div class="card-dadpes card-margem-dadpes">
+                        <h3 class="titulo-seccao-dadpes">Informação Biográfica</h3>
+                        
+                        <div class="form-grid-dadpes">
+                            <div class="form-group-dadpes">
+                                <label for="nome" class="label-dadpes">Nome Próprio</label>
+                                <input type="text" id="nome" class="input-dadpes" value="João" required>
+                            </div>
+
+                            <div class="form-group-dadpes">
+                                <label for="apelido" class="label-dadpes">Apelido</label>
+                                <input type="text" id="apelido" class="input-dadpes" value="Viajante" required>
+                            </div>
+
+                            <div class="form-group-dadpes">
+                                <label for="data-nasc" class="label-dadpes">Data de Nascimento</label>
+                                <input type="date" id="data-nasc" class="input-dadpes" value="1990-05-15">
+                            </div>
+
+                            <div class="form-group-dadpes">
+                                <label for="nacionalidade" class="label-dadpes">Nacionalidade</label>
+                                <select id="nacionalidade" class="input-dadpes">
+                                    <option selected>Portuguesa</option>
+                                    <option>Brasileira</option>
+                                    <option>Espanhola</option>
+                                    <option>Outra</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SECÇÃO DOCUMENTOS DE INDENTIFICAÇÃO -->
+                    <section class="card-dadpes card-margem-dadpes">
+                        <h3 class="titulo-seccao-dadpes">
+                            Documentos de Viagem 
+                            <span class="badge-validado-dadpes">✓ Validado</span>
+                        </h3>
+                        
+                        <div class="form-grid-dadpes">
+                            <div class="form-group-dadpes">
+                                <label for="doc-tipo" class="label-dadpes">Tipo de Documento</label>
+                                <select id="doc-tipo" class="input-dadpes">
+                                    <option>Cartão de Cidadão</option>
+                                    <option selected>Passaporte</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-dadpes">
+                                <label for="doc-num" class="label-dadpes">Número do Documento</label>
+                                <input type="text" id="doc-num" class="input-dadpes input-espacado-dadpes" value="L12345678">
+                            </div>
+
+                            <div class="form-group-dadpes">
+                                <label for="doc-validade" class="label-dadpes">Data de Validade</label>
+                                <input type="date" id="doc-validade" class="input-dadpes" value="2030-12-31">
+                            </div>
+
+                            <div class="form-group-dadpes">
+                                <label class="label-dadpes">País de Emissão</label>
+                                <input type="text" class="input-dadpes input-readonly-dadpes" value="Portugal" readonly>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- SECÇÃO MORADA E CONTACTOS -->
+                    <section class="card-dadpes">
+                        <h3 class="titulo-seccao-dadpes">Morada & Contactos</h3>
+                        
+                        <div class="form-group-dadpes grupo-morada-dadpes">
+                            <label for="rua" class="label-dadpes">Morada Completa</label>
+                            <input type="text" id="rua" class="input-dadpes" value="Rua das Flores, nº 123, 4º Esq">
+                        </div>
+
+                        <div class="form-grid-dadpes">
+                            <div class="form-group-dadpes">
+                                <label for="cp" class="label-dadpes">Código Postal</label>
+                                <input type="text" id="cp" class="input-dadpes" value="1000-001">
+                            </div>
+
+                            <div class="form-group-dadpes">
+                                <label for="cidade" class="label-dadpes">Cidade</label>
+                                <input type="text" id="cidade" class="input-dadpes" value="Lisboa">
+                            </div>
+                            
+                            <div class="form-group-dadpes">
+                                <label for="tel" class="label-dadpes">Telemóvel</label>
+                                <input type="tel" id="tel" class="input-dadpes" value="+351 912 345 678">
+                            </div>
+                            
+                            <div class="form-group-dadpes">
+                                <label for="email-alt" class="label-dadpes">Email Alternativo</label>
+                                <input type="email" id="email-alt" class="input-dadpes" placeholder="Opcional">
+                            </div>
+                        </div>
+
+                        <div class="wrapper-botao-dadpes">
+                            <button class="btn-salvar-dadpes">Guardar Alterações</button>
+                        </div>
+                    </section>
+
+                </form>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Lista de Artigos</title>
+</head>
+<body id="listarfav">
+    <!-- CABEÇALHO FAVORITOS LISTA DE ARTIGOS -->
+    <!-- TODOS OS BOTÕES SÃO ILUSTRATIVOS EXETO O DESCRITO ABAIXO , OS DEMAIS MANDAM PARA O INICIO DESTA PAGINA -->
+    <!-- BOTÃO VER COMENTÁRIOS: ABRE UMA DIV QUE ESTÁ EM HEIGHT:0, E PASSA PARA MAX HEIGHT:500 , E APARECE OS COMENTÁRIOS FUNÇÃO CHECKED NO CSS -->
+    <header class="header-hero-listarfav">
+        <h1 class="titulo-listarfav">Os Seus Favoritos</h1>
+        <p class="subtitulo-listarfav">A sua coleção pessoal de destinos e experiências.</p>
+    </header>
+
+    <main class="container-main-listarfav">
+        <!-- SECÇÃO LISTA DE TEMATICAS -->
+        <section class="area-filtros-listarfav">
+            <span class="titulo-filtro-listarfav">Filtrar por Lista:</span>
+            
+            <div class="lista-tags-listarfav">
+                <label>
+                    <input type="radio" name="filtro" class="radio-filtro-listarfav" checked>
+                    <span class="label-filtro-listarfav">Todos</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="filtro" class="radio-filtro-listarfav">
+                    <span class="label-filtro-listarfav">❤️ Lua de Mel</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="filtro" class="radio-filtro-listarfav">
+                    <span class="label-filtro-listarfav">🎒 Aventura</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="filtro" class="radio-filtro-listarfav">
+                    <span class="label-filtro-listarfav">🧘 Relax</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- ARTIGOS SELECIONADOS E DETALHE COM Resumo/classificação e comentários/idioma/datas/participantes/custo -->
+        <div class="grid-favoritos-listarfav">
+
+            <article class="card-fav-listarfav">
+                
+                <div class="wrapper-img-listarfav">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Praia" class="img-fav-listarfav">
+                    <!-- custo -->
+                    <span class="badge-custo-listarfav">€ 850</span>
+                </div>
+
+                <input type="checkbox" id="fav1" class="check-toggle-listarfav">
+
+                <div class="conteudo-fav-listarfav">
+                    <h3 class="titulo-card-listarfav">Porto Santo</h3>
+                    <!-- RESUMO -->
+                    <p class="resumo-card-listarfav">Uma semana inesquecível entre casas brancas e mar azul-turquesa. Inclui passeios de barco.</p>
+                    <!-- DATAS -->
+                    <div class="meta-info-listarfav">
+                        <div class="meta-item-listarfav">
+                            <span>📅</span> Ago/Set
+                        </div>
+                    <!-- PARTICIPANTES -->
+                        <div class="meta-item-listarfav">
+                            <span>👥</span> 2 Pess.
+                        </div>
+                    <!-- IDIOMAS -->
+                        <div class="meta-item-listarfav">
+                            <span>🗣️</span> Ing/Port
+                        </div>
+                    <!-- CLASSIFICAÇÕES -->
+                        <div class="meta-item-listarfav rating-listarfav">
+                            ★ 4.8
+                        </div>
+                    </div>
+
+                    <div class="footer-card-listarfav">
+                        <label for="fav1" class="btn-detalhes-listarfav">Ver comentários</label>
+                        <a href="#" class="btn-remover-listarfav">Remover</a>
+                    </div>
+                </div>
+                <!-- COMENTÁRIOS AO CARREGAR NO BOTÃO DETALHES -->
+                <div class="painel-expandido-listarfav">
+                    <div class="conteudo-extra-listarfav">
+                        <h4 class="titulo-extra-listarfav">O que dizem os viajantes:</h4>
+                        
+                        <div class="comentario-box-listarfav">
+                            <strong>Sofia M.</strong> <span class="cor-star-listarfav">★★★★★</span><br>
+                            "O hotel era fantástico e a localização perfeita. Recomendo alugar uma scooter."
+                        </div>
+                        
+                        <div class="comentario-box-listarfav">
+                            <strong>Pedro L.</strong> <span class="cor-star-listarfav">★★★★☆</span><br>
+                            "Muito bonito, mas um pouco cheio em Agosto. O guia foi excelente."
+                        </div>
+
+                        <div class="notas-extra-listarfav">
+                            <strong>Notas:</strong> Pequeno-almoço incluído. Taxa turística não incluída.
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="card-fav-listarfav">
+                
+                <div class="wrapper-img-listarfav">
+                    <img src="../img/pico do arieiro.jpeg" alt="Peru" class="img-fav-listarfav">
+                    <span class="badge-custo-listarfav">€ 1,400</span>
+                </div>
+
+                <input type="checkbox" id="fav2" class="check-toggle-listarfav">
+
+                <div class="conteudo-fav-listarfav">
+                    <h3 class="titulo-card-listarfav">Estadia Pico do Arieiro</h3>
+                    <p class="resumo-card-listarfav">A trilha  completa com guias locais. Uma experiência espiritual e física nos picos mais altos.</p>
+
+                    <div class="meta-info-listarfav">
+                        <div class="meta-item-listarfav">
+                            <span>📅</span> Mai/Jun
+                        </div>
+                        <div class="meta-item-listarfav">
+                            <span>👥</span> 4-8 Pess.
+                        </div>
+                        <div class="meta-item-listarfav">
+                            <span>🗣️</span> Esp/Ing/Port
+                        </div>
+                        <div class="meta-item-listarfav rating-listarfav">
+                            ★ 5.0
+                        </div>
+                    </div>
+
+                    <div class="footer-card-listarfav">
+                        <label for="fav2" class="btn-detalhes-listarfav">Ver comentários</label>
+                        <a href="#" class="btn-remover-listarfav">Remover</a>
+                    </div>
+                </div>
+
+                <div class="painel-expandido-listarfav">
+                    <div class="conteudo-extra-listarfav">
+                        <h4 class="titulo-extra-listarfav">O que dizem os viajantes:</h4>
+                        
+                        <div class="comentario-box-listarfav">
+                            <strong>André G.</strong> <span class="cor-star-listarfav">★★★★★</span><br>
+                            "A vista lá de cima compensa todo o esforço da caminhada. Indescritível."
+                        </div>
+
+                        <div class="notas-extra-listarfav">
+                            <strong>Notas:</strong> Exige preparação física moderada. Equipamento de campismo fornecido.
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="card-fav-listarfav">
+                
+                <div class="wrapper-img-listarfav">
+                    <img src="../img/casinha.jpg" alt="Santana" class="img-fav-listarfav">
+                    <span class="badge-custo-listarfav">€ 2,100</span>
+                </div>
+
+                <input type="checkbox" id="fav3" class="check-toggle-listarfav">
+
+                <div class="conteudo-fav-listarfav">
+                    <h3 class="titulo-card-listarfav">Casinhas de Santana</h3>
+                    <p class="resumo-card-listarfav">Estadia em chalé de luxo com spa privado e vistas para o Matterhorn.</p>
+
+                    <div class="meta-info-listarfav">
+                        <div class="meta-item-listarfav">
+                            <span>📅</span> Dez/Jan
+                        </div>
+                        <div class="meta-item-listarfav">
+                            <span>👥</span> 2 Pess.
+                        </div>
+                        <div class="meta-item-listarfav">
+                            <span>🗣️</span> Ale/Ing/Port
+                        </div>
+                        <div class="meta-item-listarfav rating-listarfav">
+                            ★ 4.9
+                        </div>
+                    </div>
+
+                    <div class="footer-card-listarfav">
+                        <label for="fav3" class="btn-detalhes-listarfav">Ver comentários</label>
+                        <a href="#" class="btn-remover-listarfav">Remover</a>
+                    </div>
+                </div>
+
+                <div class="painel-expandido-listarfav">
+                    <div class="conteudo-extra-listarfav">
+                        <h4 class="titulo-extra-listarfav">O que dizem os viajantes:</h4>
+                        
+                        <div class="comentario-box-listarfav">
+                            <strong>Maria C.</strong> <span class="cor-star-listarfav">★★★★★</span><br>
+                            "O melhor sítio para desligar do mundo. O spa é incrível."
+                        </div>
+
+                        <div class="notas-extra-listarfav">
+                            <strong>Notas:</strong> Jantar gourmet incluído todas as noites.
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </main>
+</body>
+</html>

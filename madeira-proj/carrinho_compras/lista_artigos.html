@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Lista de Artigos</title>
+</head>
+<body>
+    <style>
+
+    </style>
+</head>
+<!-- TODOS OS BOTÕES SÃO CRIADAS APENAS PARA SIMULAÇÕES VISUAIS POIS SEM JAVASCRIPT NÃO TEM FUNCIONALIDADES -->
+<body id="listart">
+
+    <header class="header-hero-listart">
+        <h1 class="titulo-listart">O Seu Carrinho</h1>
+        <p class="subtitulo-listart">Revise os detalhes das suas experiências antes de confirmar.</p>
+    </header>
+
+    <main class="container-main-listart">
+
+        <div class="grid-layout-listart">
+            <!-- SECÇÃO LISTA DE ARTIGOS SELECIONADOS/RESUMO/CLASSIFICAÇÃO/COMENTÁRIOS/IDIOMA /DATAS/ PARTICIPANTES/CUSTO -->
+            <section class="lista-itens-listart">
+
+                <article class="card-produto-listart">
+                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Safari" class="img-produto-listart">
+                    
+                    <div class="conteudo-produto-listart">
+                        
+                        <div class="header-produto-listart">
+                            <h3 class="titulo-produto-listart">Jipes paul da Serra</h3>
+                            <span class="preco-produto-listart">€ 250</span>
+                        </div>
+
+                        <span class="resumo-produto-listart">Expedição de 5 dias pela vida selvagem do Paul da Serra. Alojamento em tendas de luxo incluído.</span>
+                        <!-- DATAS -->
+                        <div class="meta-grid-listart">
+                            <div class="meta-item-listart">
+                                <span class="icone-meta-listart">📅</span> 
+                                <strong>Datas:</strong> 15 Ago - 20 Ago
+                            </div>
+                        <!-- PARTICIPANTES -->
+                            <div class="meta-item-listart">
+                                <span class="icone-meta-listart">👥</span> 
+                                <strong>Participantes:</strong> 2 Adultos
+                            </div>
+                        <!-- IDIOMA -->
+                            <div class="meta-item-listart">
+                                <span class="icone-meta-listart">🗣️</span> 
+                                <strong>Idioma:</strong> Português
+                            </div>
+                        <!-- DURAÇÃO -->
+                            <div class="meta-item-listart">
+                                <span class="icone-meta-listart">⏰</span> 
+                                <strong>Duração:</strong> 5 Dias
+                            </div>
+                        </div>
+                        <!-- CLASSIFICAÇÃO/COMENTÁRIOS OU VER COMENTÁRIOS FICTCIO , SE FOSSE REAL ABRIA POR BAIXO UMA DIV QUE TERIA OS COMENTÁRIOS ESCRITOS -->
+                        <div class="rating-wrapper-listart">
+                            ★★★★★ 4.9 
+                            <span class="link-comentarios-listart">(Ver 128 comentários)</span>
+                        </div>
+                        <!-- BOTÃO REMOVER FICTICIO -->
+                        <a href="#" class="btn-remover-listart">Remover</a>
+                    </div>
+                </article>
+
+
+                <article class="card-produto-listart">
+                    <img src="https://images.unsplash.com/photo-1515444744559-7be63e1600de?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Culinária" class="img-produto-listart">
+                    
+                    <div class="conteudo-produto-listart">
+                        
+                        <div class="header-produto-listart">
+                            <h3 class="titulo-produto-listart">Workshop Culinária Regional</h3>
+                            <span class="preco-produto-listart">€ 170</span>
+                        </div>
+
+                        <span class="resumo-produto-listart">Aula prática de espetada e degustação de vinhos numa vinha histórica. A luz das estelas</span>
+
+                        <div class="meta-grid-listart">
+                            <div class="meta-item-listart">
+                                <span class="icone-meta-listart">📅</span> 
+                                <strong>Datas:</strong> 22 Set
+                            </div>
+                            <div class="meta-item-listart">
+                                <span class="icone-meta-listart">👥</span> 
+                                <strong>Participantes:</strong> 2 Adultos
+                            </div>
+                            <div class="meta-item-listart">
+                                <span class="icone-meta-listart">🗣️</span> 
+                                <strong>Idioma:</strong> Inglês/Português
+                            </div>
+                            <div class="meta-item-listart">
+                                <span class="icone-meta-listart">⏰</span> 
+                                <strong>Duração:</strong> 4 Horas
+                            </div>
+                        </div>
+
+                        <div class="rating-wrapper-listart">
+                            ★★★★★ 5.0 
+                            <span class="link-comentarios-listart">(Ver 42 comentários)</span>
+                        </div>
+
+                        <a href="#" class="btn-remover-listart">Remover</a>
+                    </div>
+                </article>
+
+            </section>
+
+<!-- Secção resumo -->
+            <aside class="coluna-resumo-listart">
+                <div class="box-checkout-listart">
+                    <h3 class="titulo-resumo-listart">Resumo da Compra</h3>
+                    
+                    <div class="linha-resumo-listart">
+                        <span>Safari Masai Mara (x2)</span>
+                        <span>€ 500</span>
+                    </div>
+                    <div class="linha-resumo-listart">
+                        <span>Workshop Culinária Regional (x2)</span>
+                        <span>€ 340</span>
+                    </div>
+                    <div class="linha-resumo-listart">
+                        <span>Taxas de Serviço</span>
+                        <span>€ 0.00</span>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <input type="text" placeholder="Código Promocional" class="input-promo-listart">
+                    </div>
+
+                    <div class="linha-total-listart">
+                        <span>Total</span>
+                        <span>€ 840</span>
+                    </div>
+
+                    <button class="btn-finalizar-listart">Ir para Pagamento</button>
+
+                    <p class="seguranca-texto-listart">🔒 Pagamento 100% Seguro. Dados encriptados.</p>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+</body>
+</html>
+</body>
+</html>

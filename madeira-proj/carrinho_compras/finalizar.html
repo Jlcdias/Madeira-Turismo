@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Finalizar Compras</title>
+</head>
+<body id="finreser">
+<!-- TODOS OS BOTÕES SÃO MERAMENTE ILUSTRATIVOS NAO TENDO JAVASCRIPT , FICAM SEMFUNCIONALIDADE -->
+<!-- CABEÇALHO fINALIZAR RESERVA -->
+    <header class="header-hero-finreser">
+        <h1 class="titulo-finreser">Finalizar Reserva</h1>
+    </header>
+
+    <main class="container-main-finreser">
+
+        <form action="#"  class="grid-layout-finreser">
+<!-- SECÇÃO DADOS E METODOS DE PAGAMENTO -->
+            <div class="coluna-esquerda-finreser">
+                
+                <section class="card-branco-finreser">
+                    <h2 class="titulo-seccao-finreser">Método de Pagamento</h2>
+                    
+                    <div class="grid-metodos-finreser">
+                        
+                        <label>
+                            <input type="radio" name="pagamento" class="radio-oculto-finreser" checked>
+                            <div class="label-metodo-finreser">
+                                <span class="icone-pagamento-finreser">💳</span>
+                                Cartão Crédito
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pagamento" class="radio-oculto-finreser">
+                            <div class="label-metodo-finreser">
+                                <span class="icone-pagamento-finreser">📱</span>
+                                MB Way
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pagamento" class="radio-oculto-finreser">
+                            <div class="label-metodo-finreser">
+                                <span class="icone-pagamento-finreser">🅿️</span>
+                                PayPal
+                            </div>
+                        </label>
+
+                    </div>
+
+                    <div class="form-grid-finreser">
+                        
+                        <div class="grupo-input-finreser largura-total-finreser">
+                            <label class="label-input-finreser">Nome no Cartão</label>
+                            <input type="text" class="input-finreser" placeholder="Como aparece no cartão" required>
+                        </div>
+
+                        <div class="grupo-input-finreser largura-total-finreser">
+                            <label class="label-input-finreser">Número do Cartão</label>
+                            <input type="text" class="input-finreser" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                        </div>
+
+                        <div class="grupo-input-finreser">
+                            <label class="label-input-finreser">Validade (MM/AA)</label>
+                            <input type="text" class="input-finreser" placeholder="MM/AA" maxlength="5" required>
+                        </div>
+
+                        <div class="grupo-input-finreser">
+                            <label class="label-input-finreser">CVC / CVV</label>
+                            <input type="text" class="input-finreser" placeholder="123" maxlength="3" required>
+                        </div>
+
+                        <!-- Registo de pagamento plataforma (validação: apenas vazio/cheio) -->
+                        <div class="grupo-input-finresrv largura-total-finreser">
+                            <label class="label-input-finresrv">Registo de pagamento plataforma (Email)</label>
+                            <input type="text" name="registo_pagamento_plataforma" id="registo_pagamento_plataforma" class="input-registo-finresrv" placeholder="seu@exemplo.com" required aria-describedby="msg-registo-finresrv">
+                            <span id="msg-registo-finresrv" class="msg-registo-finresrv" aria-live="polite"></span>
+                        </div>
+
+                        <!-- Password para registo de pagamento (sem regras, apenas vazio/cheio) -->
+                        <div class="grupo-input-finresrv largura-total-finreser">
+                            <label class="label-input-finresrv">Password</label>
+                            <input type="password" name="registo_pagamento_password" id="registo_pagamento_password" class="input-password-finresrv" placeholder="••••••••" required aria-describedby="msg-password-finresrv">
+                            <span id="msg-password-finresrv" class="msg-password-finresrv" aria-live="polite"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="icone-seguro-finreser">
+                        <span>🔒</span>
+                        <span>As suas informações de pagamento são encriptadas.</span>
+                    </div>
+
+                </section>
+
+                <section class="card-branco-finreser">
+                    <h2 class="titulo-seccao-finreser">Dados de Faturação</h2>
+                    
+                    <div class="grupo-input-finreser">
+                        <label class="label-input-finreser">Morada de Faturação</label>
+                        <select class="input-finreser">
+                            <option>Mesma morada da conta (Rua das Flores...)</option>
+                            <option>Usar uma morada diferente</option>
+                        </select>
+                    </div>
+                </section>
+
+            </div>
+
+<!-- SECÇÃO RESUMO DO PEDIDO COM O N TOTAL DE ITENS -->
+            <aside class="coluna-direita-finreser">
+                
+                <div class="card-branco-finreser box-resumo-finreser">
+                    <h2 class="titulo-seccao-finreser">Resumo do Pedido</h2>
+                    
+                    <ul class="lista-itens-finreser">
+                        <li class="item-resumo-finreser">
+                            <div>
+                                <span class="nome-item-finreser">Jipes Paul da Serra</span><br>
+                                <span class="qtd-item-finreser">2 Adultos</span>
+                            </div>
+                            <span>€ 500</span>
+                        </li>
+                        <li class="item-resumo-finreser">
+                            <div>
+                                <span class="nome-item-finreser">Workshop Culinária Regional</span><br>
+                                <span class="qtd-item-finreser">2 Adultos</span>
+                            </div>
+                            <span>€ 340</span>
+                        </li>
+                    </ul>
+
+                    <div class="linha-subtotal-finreser">
+                        <span>Subtotal (4 Itens)</span>
+                        <span>€ 840</span>
+                    </div>
+                    
+                    <div class="linha-subtotal-finreser">
+                        <span>Taxas e Impostos</span>
+                        <span>Incluído</span>
+                    </div>
+
+                    <div class="linha-total-finreser">
+                        <span>Total a Pagar</span>
+                        <span>€840</span>
+                    </div>
+
+                    <button type="submit" class="btn-finalizar-finreser">Pagar e Confirmar</button>
+
+                    <p class="termos-texto-finreser">
+                        Ao clicar no botão acima, concorda com os nossos <a href="#" style="color:#666;">Termos de Serviço</a> e Política de Cancelamento.
+                    </p>
+                </div>
+
+            </aside>
+
+        </form>
+
+    </main>
+</body>
+</html>

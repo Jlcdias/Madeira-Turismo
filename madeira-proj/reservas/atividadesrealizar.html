@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Atividades a Realizar</title>
+</head>
+<body>
+    <!-- TODOS OS BOTÕES SÃO APENAS UM EXEMPLO DE ESTILO SEM FUNCIONALIDADES POR FALTA DE JAVA SCRIPT A EXESSAO DOS TAB -->
+    <body id="arquiatv">
+    <!-- CABEÇALHO -->
+    <header class="header-hero-arquiatv">
+        <h1 class="titulo-arquiatv">Minhas Reservas</h1>
+        <p class="subtitulo-arquiatv">Gerir itinerários e avaliar experiências passadas.</p>
+    </header>
+<!-- PROXIMAS/HISTÓRICO VIAGENS A ESTRUTURA É A MESMA MAS  O HISTÓRICO LOCALIZA-SE ABAIXO -->
+    <main class="container-main-arquiatv">
+
+        <h2 class="titulo-seccao-arquiatv">Próximas Viagens</h2>
+
+        <article class="card-booking-arquiatv">
+            
+            <input type="checkbox" id="expand-1" class="check-expand-arquiatv">
+
+            <div class="card-header-arquiatv">
+                <img src="../img/golfinhos.jpg" alt="Islandia" class="img-thumb-arquiatv">
+                
+                <div class="info-basic-arquiatv">
+                    <span class="booking-id-arquiatv">Reserva #ISL-2024</span>
+                    <h3 class="booking-title-arquiatv">Passeio Golfinhos</h3>
+                    <div class="booking-date-arquiatv">
+                        <span>📅 15 Nov - 20 Nov 2024</span>
+                        <span>• 2 Adultos</span>
+                    </div>
+                </div>
+
+                <div class="status-action-arquiatv">
+                    <span class="badge-status-arquiatv status-conf-arquiatv">Confirmado</span>
+                    <label for="expand-1" class="btn-expand-arquiatv"></label>
+                </div>
+            </div>
+
+            <div class="details-wrapper-arquiatv">
+                <div class="details-content-arquiatv">
+                    
+                    <div class="tabs-container-arquiatv">
+                        <input type="radio" name="tabs1" id="t1-overview" class="tab-input-arquiatv" checked>
+                        <input type="radio" name="tabs1" id="t1-itinerary" class="tab-input-arquiatv">
+                        <input type="radio" name="tabs1" id="t1-review" class="tab-input-arquiatv"> <div class="tabs-nav-arquiatv">
+                            <label for="t1-overview" class="tab-label-arquiatv">Visão Geral & Info</label>
+                            <label for="t1-itinerary" class="tab-label-arquiatv">Itinerário</label>
+                            <label for="t1-review" class="tab-label-arquiatv">Comentar
+
+                            </label>
+                        </div>
+
+                        <div class="tab-panel-arquiatv panel-overview-arquiatv">
+                            <div class="grid-info-arquiatv">
+                                <div>
+                                    <!-- DESCRIÇÃO -->
+                                    <h4 style="margin-top:0; color:var(--cor-primaria)">Sobre a Experiência</h4>
+                                    <p class="desc-text-arquiatv">Prepare-se para o frio! Esta expedição foca-se na caça aos Golfinhos. O guia estará monitorizando a atividade solar diariamente.</p>
+                                    <!-- INCLUIDO  -->
+                                    <h5 style="color:var(--cor-primaria)">Incluído no Serviço:</h5>
+                                    <ul class="list-included-arquiatv">
+                                        <li class="item-included-arquiatv">5 Noites em Hotel Superior</li>
+                                        <li class="item-included-arquiatv">Transferes 4x4</li>
+                                        <li class="item-included-arquiatv">Equipamento Térmico</li>
+                                        <li class="item-included-arquiatv">Seguro de Viagem</li>
+                                    </ul>
+                                </div>
+                                <!-- OUTRAS SUGESTOES -->
+                                <div class="sidebar-suggestions-arquiatv">
+                                    <span class="suggestion-title-arquiatv">Outras Sugestões Locais:</span>
+                                    <a href="#" class="suggestion-link-arquiatv">➔ Restaurantes na Costa norte</a>
+                                    <a href="#" class="suggestion-link-arquiatv">➔ Aluguer de Carro</a>
+                                    <a href="#" class="suggestion-link-arquiatv">➔ Museus </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ITENERARIO -->
+                        <div class="tab-panel-arquiatv panel-itinerary-arquiatv">
+                            <div class="timeline-box-arquiatv">
+                                <div class="timeline-event-arquiatv">
+                                    <span class="event-day-arquiatv">Dia 1: Chegada</span>
+                                    Transfer para o hotel e briefing de segurança.
+                                </div>
+                                <div class="timeline-event-arquiatv">
+                                    <span class="event-day-arquiatv">Dia 2: Visibilidade de Crustácios</span>
+                                    Visita a Atalaia.
+                                </div>
+                                <div class="timeline-event-arquiatv">
+                                    <span class="event-day-arquiatv">Dia 3: Mar profundo</span>
+                                    Mergulho .
+                                </div>
+                            </div>
+                        </div>
+                        <!-- REALIZAR COMENTÁRIOS -->
+                        <div class="tab-panel-arquiatv panel-review-arquiatv">
+                            <p style="color:#666;">Use este espaço para comentar.</p>
+                            <textarea class="textarea-arquiatv" rows="4" placeholder="Ex: ADOREI!"></textarea>
+                            <button class="btn-submit-arquiatv">Comentar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- HISTÓRICO VIAGENS -->
+        <h2 class="titulo-seccao-arquiatv">Histórico</h2>
+
+        <article class="card-booking-arquiatv">
+            
+            <input type="checkbox" id="expand-2" class="check-expand-arquiatv">
+
+            <div class="card-header-arquiatv">
+                <img src="../img/pico do arieiro.jpeg" alt="Bali" class="img-thumb-arquiatv">
+                
+                <div class="info-basic-arquiatv">
+                    <span class="booking-id-arquiatv">Reserva #BALI-882</span>
+                    <h3 class="booking-title-arquiatv">Retiro Espiritual nas Montanhas</h3>
+                    <div class="booking-date-arquiatv">
+                        <span>📅 10 Jun - 20 Jun 2023</span>
+                        <span>• 1 Adulto</span>
+                    </div>
+                </div>
+
+                <div class="status-action-arquiatv">
+                    <span class="badge-status-arquiatv status-past-arquiatv">Concluído</span>
+                    <label for="expand-2" class="btn-expand-arquiatv"></label>
+                </div>
+            </div>
+
+            <div class="details-wrapper-arquiatv">
+                <div class="details-content-arquiatv">
+                    
+                    <div class="tabs-container-arquiatv">
+                        <input type="radio" name="tabs2" id="t2-overview" class="tab-input-arquiatv">
+                        <input type="radio" name="tabs2" id="t2-itinerary" class="tab-input-arquiatv">
+                        <input type="radio" name="tabs2" id="t2-review" class="tab-input-arquiatv" checked>
+
+                        <div class="tabs-nav-arquiatv">
+                            <label for="t2-overview" class="tab-label-arquiatv">Visão Geral & Info</label>
+                            <label for="t2-itinerary" class="tab-label-arquiatv">Itinerário</label>
+                            <label for="t2-review" class="tab-label-arquiatv">Avaliar & Comentar</label>
+                        </div>
+
+                        <div class="tab-panel-arquiatv panel-overview-arquiatv">
+                            <!-- DESCRIÇÃO -->
+                            <p class="desc-text-arquiatv">Retiro de 10 dias focado em Yoga e Meditação.</p>
+                            <!-- INCLUINDO NO SERVIÇO -->
+                            <ul class="list-included-arquiatv">
+                                <li class="item-included-arquiatv">Alojamento Villa Privada</li>
+                                <li class="item-included-arquiatv">Refeições Vegetarianas</li>
+                            </ul>
+                        </div>
+                        <!-- ITENERARIO -->
+                        <div class="tab-panel-arquiatv panel-itinerary-arquiatv">
+                            <div class="timeline-box-arquiatv">
+                                <div class="timeline-event-arquiatv">
+                                    <span class="event-day-arquiatv">Dia 1-10</span>
+                                    Rotina diária de Yoga, Meditação e Excursões aos templos.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- REALIZAR COMENTÁRIO E CLASSIFICAÇÃO -->
+                        <div class="tab-panel-arquiatv panel-review-arquiatv">
+                            <div class="review-form-arquiatv">
+                                <h4 style="margin-top:0; color:var(--cor-primaria)">Como foi a sua experiência?</h4>
+                                
+                                <form onsubmit="return false;">
+                                    <div class="star-widget-arquiatv">
+                                        <input type="radio" name="rate" id="star-5" class="star-input-arquiatv">
+                                        <label for="star-5" class="star-label-arquiatv">★</label>
+                                        
+                                        <input type="radio" name="rate" id="star-4" class="star-input-arquiatv">
+                                        <label for="star-4" class="star-label-arquiatv">★</label>
+                                        
+                                        <input type="radio" name="rate" id="star-3" class="star-input-arquiatv">
+                                        <label for="star-3" class="star-label-arquiatv">★</label>
+                                        
+                                        <input type="radio" name="rate" id="star-2" class="star-input-arquiatv">
+                                        <label for="star-2" class="star-label-arquiatv">★</label>
+                                        
+                                        <input type="radio" name="rate" id="star-1" class="star-input-arquiatv">
+                                        <label for="star-1" class="star-label-arquiatv">★</label>
+                                    </div>
+
+                                    <textarea class="textarea-arquiatv" rows="4" placeholder="Partilhe os detalhes da sua viagem. O que mais gostou?"></textarea>
+                                    
+                                    <button class="btn-submit-arquiatv">Publicar Avaliação</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>

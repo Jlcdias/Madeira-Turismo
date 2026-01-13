@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Preferências</title>
+</head>
+<body id="preferen">
+</head>
+<body>
+    <!-- QUALQUER BOTÃO NESTA PAGINA SERVE APENAS DE ILUSTRAM E NÃO FUNCIONA, SENDO QUE TODOS ESTÃO ANIMADOS PARA QUESTÕES VISUAIS DE EXEMPLIFICAÇÃO -->
+<!-- CABEÇALHO/TITULO DA SECÇÃO -->
+    <header class="header-hero-preferen">
+        <h1 class="titulo-header-preferen">Configurações & Preferências</h1>
+        <p class="subtitulo-header-preferen">Personalize a sua experiência de navegação</p>
+    </header>
+
+    <main class="container-preferen">
+
+        <form action="#" >
+
+            <section class="card-branco-preferen">
+                <h2 class="titulo-seccao-preferen">
+                    <span class="icone-titulo-preferen">🌍</span> Idioma da Interface
+                </h2>
+                <!-- SECÇÃO IDIOMA -->
+                <div class="grid-idiomas-preferen">
+                    <!-- OPÇÃO PORTUGUES -->
+                    <div class="opcao-wrapper-preferen">
+                        <input type="radio" name="idioma" id="lang-pt" class="input-radio-oculto-preferen" checked>
+                        <!-- BUTÃO FICTICIO INGLES/PORTUGUES NAO FUNCIONA-->
+                        <label for="lang-pt" class="label-cartao-preferen">
+                            <img src="https://flagcdn.com/w80/pt.png" alt="PT" class="bandeira-img-preferen">
+                            <div>
+                                <span class="texto-grande-preferen">Português (PT)</span>
+                                <span class="texto-pequeno-preferen">Padrão do sistema</span>
+                            </div>
+                        </label>
+                    </div>
+                    <!-- OPÇÃO INGLES -->
+                    <div class="opcao-wrapper-preferen">
+                        <input type="radio" name="idioma" id="lang-en" class="input-radio-oculto-preferen">
+                        
+                        <label for="lang-en" class="label-cartao-preferen">
+                            <img src="https://flagcdn.com/w80/gb.png" alt="UK" class="bandeira-img-preferen">
+                            <div>
+                                <span class="texto-grande-preferen">English (UK)</span>
+                                <span class="texto-pequeno-preferen">International</span>
+                            </div>
+                        </label>
+                    </div>
+
+                </div>
+            </section>
+<!-- BUTAO FICTICIO TEMA NAO FUNCIONA-->
+            <section class="card-branco-preferen">
+                <h2 class="titulo-seccao-preferen">
+                    <span class="icone-titulo-preferen">🎨</span> Aparência
+                </h2>
+
+                <div class="wrapper-tema-preferen">
+                    <div class="descricao-tema-preferen">
+                        <span class="texto-grande-preferen">Modo Escuro</span>
+                        <span class="texto-pequeno-preferen">Reduz o cansaço visual em ambientes com pouca luz.</span>
+                    </div>
+<!--SECÇÃO TEMA/ BUTAO FICTICIO TEMA NAO FUNCIONA-->
+                    <label class="switch-tema-preferen">
+                        <input type="checkbox" class="input-radio-oculto-preferen">
+                        <span class="slider-tema-preferen">
+                            <span>☀️</span>
+                            <span>🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </section>
+<!-- sECÇÃO MOEDA FICTICIA NÃO FUNCIONA -->
+            <section class="card-branco-preferen">
+                <h2 class="titulo-seccao-preferen">
+                    <span class="icone-titulo-preferen">💳</span> Moeda Preferida
+                </h2>
+                <p class="texto-pequeno-preferen" style="margin-bottom: 20px;">Os preços serão convertidos automaticamente para a moeda selecionada.</p>
+
+                <div class="grid-moeda-preferen">
+                    
+                    <div>
+                        <input type="radio" name="moeda" id="curr-eur" class="input-radio-oculto-preferen" checked>
+                        <label for="curr-eur" class="label-cartao-preferen card-moeda-preferen">
+                            <span class="simbolo-moeda-preferen">€</span>
+                            <span class="texto-grande-preferen">EUR</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="moeda" id="curr-usd" class="input-radio-oculto-preferen">
+                        <label for="curr-usd" class="label-cartao-preferen card-moeda-preferen">
+                            <span class="simbolo-moeda-preferen">$</span>
+                            <span class="texto-grande-preferen">USD</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="moeda" id="curr-gbp" class="input-radio-oculto-preferen">
+                        <label for="curr-gbp" class="label-cartao-preferen card-moeda-preferen">
+                            <span class="simbolo-moeda-preferen">£</span>
+                            <span class="texto-grande-preferen">GBP</span>
+                        </label>
+                    </div>
+
+                </div>
+            </section>
+            <!-- BOTÃO (GUARDAR) FICTICIO NÃO FUNCIONA  -->
+            <div class="area-botao-preferen">
+                <button class="btn-salvar-preferen">Guardar Preferências</button>
+            </div>
+
+        </form>
+
+    </main>
+</body>
+</html>

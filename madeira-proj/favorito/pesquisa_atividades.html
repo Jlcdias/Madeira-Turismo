@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Pesquisa de Atividades</title>
+</head>
+<body id="pesquiatv">
+<!-- TODOS OS BOTÕES QUE ESTÃO NESTE CODIGO É APENAS UMA EXEMPLIFICAÇÃO VISUAL E ESTETETICA , NESTE CASO 90% FUNCIONAM , OS UNICOS QUE NÃO FUNCIONAM SÃO OS BOTÕES QUE ESTÃO DENTRO DE QUEM VIU ISTO TÁMBEM GOSTOU: -->
+<!-- CABEÇALHO E PESQUISA DE ATIVIDADES -->
+    <header class="header-search-pesquisatv">
+        <h1 class="titulo-hero-pesquisatv">Encontre a sua próxima aventura</h1>
+        <p class="subtitulo-hero-pesquisatv">Explore destinos, itinerários e experiências exclusivas.</p>
+        
+        <form onsubmit="return false;" class="search-box-pesquisatv">
+            <input type="text" class="input-search-pesquisatv" placeholder="Ex: Espetada, Porto Moniz, Mergulho...">
+            <button class="btn-search-pesquisatv">Pesquisar</button>
+        </form>
+    </header>
+<!-- MAIN SECTION DO SITE E NESTA ZONA TEMOS UMA LITA DE ARTIGOS COM OS DETALHES NO INTERIOR destaques, descrição, itinerário, incluido no serviço , informações e outras sugestões)/Adicionar aos Favoritos -->
+    <main class="container-main-pesquisatv">
+
+        <div class="grid-results-pesquisatv">
+
+            <article class="card-result-pesquisatv">
+                
+                <div class="img-wrapper-pesquisatv">
+                    <img src="../img/casinha.jpg" alt="Casinha de Santana" class="img-card-pesquisatv">
+                    <!-- ADICIONAR AOS FAVORITOS -->
+                    <input type="checkbox" id="fav-1" class="check-fav-pesquisatv">
+                    <label for="fav-1" class="label-fav-pesquisatv">♥</label>
+                </div>
+
+                <input type="checkbox" id="expand-1" class="check-expand-pesquisatv">
+
+                <div class="content-summary-pesquisatv">
+                    <div class="header-card-pesquisatv">
+                        <div>
+                            <span class="badge-info-pesquisatv">Grupo Pequeno</span>
+                            <h2 class="titulo-card-pesquisatv">Casinha Santana</h2>
+                        </div>
+                        <span class="preco-card-pesquisatv">€ 250</span>
+                    </div>
+                    <!-- DESCRIÇÃO -->
+                    <p class="desc-curta-pesquisatv">
+                        Uma caçada de 5 noites às Luzes do Norte, passando por cascatas.
+                    </p>
+                    <!-- SECÇÃO DE INFORMAÇÕES GERAIS -->
+                    <div class="tags-list-pesquisatv">
+                        <span class="tag-item-pesquisatv">❄️ Neve</span>
+                        <span class="tag-item-pesquisatv">📸 Fotografia</span>
+                        <span class="tag-item-pesquisatv">🚙 4x4</span>
+                    </div>
+
+                    <label for="expand-1" class="label-expand-pesquisatv"></label>
+                </div>
+
+                <div class="detail-panel-pesquisatv">
+                    <div class="detail-content-pesquisatv">
+                        
+                        <div class="tabs-container-pesquisatv">
+                            
+                            <input type="radio" name="tabs-1" id="tab1-1" class="tab-radio-pesquisatv" checked>
+                            <input type="radio" name="tabs-1" id="tab1-2" class="tab-radio-pesquisatv">
+                            <input type="radio" name="tabs-1" id="tab1-3" class="tab-radio-pesquisatv">
+
+                            <div class="tabs-header-pesquisatv">
+                                <label for="tab1-1" class="tab-label-pesquisatv">Visão Geral & Destaques</label>
+                                <label for="tab1-2" class="tab-label-pesquisatv">Itinerário</label>
+                                <label for="tab1-3" class="tab-label-pesquisatv">Incluído / Info</label>
+                            </div>
+                        <!-- DESTAQUES -->
+                            <div class="tab-content-pesquisatv content-1-pesquisatv">
+                                <h3 class="titulo-destaque-pesquisatv">Destaques da Experiência</h3>
+                                <p>Esta é a viagem definitiva para fotógrafos e amantes da natureza. Iremos percorrer o "Golden Circle" e a costa sul, visitando a praia de areia negra de Reynisfjara e a lagoa glaciar Jökulsárlón.</p>
+                                <ul>
+                                    <li>Banho no caldeirão verde (Entrada Premium).</li>
+                                    <li>Caça à Aurora Boreal com guia meteorologista.</li>
+                                    <li>Visita a cavernas natural.</li>
+                                </ul>
+                            </div>
+                        <!-- ITENERARIO -->
+                            <div class="tab-content-pesquisatv content-2-pesquisatv">
+                                <div class="timeline-pesquisatv">
+                                    <div class="timeline-item-pesquisatv">
+                                        <span class="day-title-pesquisatv">Dia 1: Chegada a Santana</span>
+                                        Transfer privado e jantar de boas-vindas.
+                                    </div>
+                                    <div class="timeline-item-pesquisatv">
+                                        <span class="day-title-pesquisatv">Dia 2: O cabo girão</span>
+                                        Miradouro Mundial.
+                                    </div>
+                                    <div class="timeline-item-pesquisatv">
+                                        <span class="day-title-pesquisatv">Dia 3: Costa Sul</span>
+                                        Cascatas.
+                                    </div>
+                                    <div class="timeline-item-pesquisatv">
+                                        <span class="day-title-pesquisatv">Dia 4: Caldeirão</span>
+                                        Caminhada no caldeirão.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- INCLUIDO NO SERVIÇO -->
+                            <div class="tab-content-pesquisatv content-3-pesquisatv">
+                                <ul class="check-list-pesquisatv">
+                                    <li class="check-item-pesquisatv">5 Noites em Hotéis 4 Estrelas</li>
+                                    <li class="check-item-pesquisatv">Pequeno-almoço e Jantares</li>
+                                    <li class="check-item-pesquisatv">Guia em Português/Inglês</li>
+                                    <li class="check-item-pesquisatv">Transporte em Super Jeep</li>
+                                    <li class="cross-item-pesquisatv">Voos Internacionais</li>
+                                    <li class="cross-item-pesquisatv">Seguro de Viagem Pessoal</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                            <!-- SUGESTÃO DE OUTROS ATIVIDADES -->
+                        <div class="suggestions-pesquisatv">
+                            <span class="suggestions-title-pesquisatv">Quem viu isto também gostou:</span>
+                            <div class="suggestions-grid-pesquisatv">
+                                <div class="mini-card-pesquisatv">Vimes</div>
+                                <div class="mini-card-pesquisatv">Carrinhos do monte</div>
+                                <div class="mini-card-pesquisatv">Broas de mel</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-result-pesquisatv">
+                
+                <div class="img-wrapper-pesquisatv">
+                    <img src="../img/jipe.jpg" alt="arvores" class="img-card-pesquisatv">
+                    <input type="checkbox" id="fav-2" class="check-fav-pesquisatv">
+                    <label for="fav-2" class="label-fav-pesquisatv">♥</label>
+                </div>
+
+                <input type="checkbox" id="expand-2" class="check-expand-pesquisatv">
+
+                <div class="content-summary-pesquisatv">
+                    <div class="header-card-pesquisatv">
+                        <div>
+                            <span class="badge-info-pesquisatv">Adrenalina</span>
+                            <h2 class="titulo-card-pesquisatv">Jipes</h2>
+                        </div>
+                        <span class="preco-card-pesquisatv">€ 200</span>
+                    </div>
+
+                    <p class="desc-curta-pesquisatv">
+                        10 dias de tour, meditação e descoberta dos templos sagrados.
+                    </p>
+
+                    <div class="tags-list-pesquisatv">
+                        <span class="tag-item-pesquisatv">🧘 Yoga</span>
+                        <span class="tag-item-pesquisatv">🌴 Praia</span>
+                        <span class="tag-item-pesquisatv">🏛️ Templos</span>
+                    </div>
+
+                    <label for="expand-2" class="label-expand-pesquisatv"></label>
+                </div>
+
+                <div class="detail-panel-pesquisatv">
+                    <div class="detail-content-pesquisatv">
+                        
+                        <div class="tabs-container-pesquisatv">
+                            
+                            <input type="radio" name="tabs-2" id="tab2-1" class="tab-radio-pesquisatv" checked>
+                            <input type="radio" name="tabs-2" id="tab2-2" class="tab-radio-pesquisatv">
+                            <input type="radio" name="tabs-2" id="tab2-3" class="tab-radio-pesquisatv">
+
+                            <div class="tabs-header-pesquisatv">
+                                <label for="tab2-1" class="tab-label-pesquisatv">Visão Geral & Destaques</label>
+                                <label for="tab2-2" class="tab-label-pesquisatv">Itinerário</label>
+                                <label for="tab2-3" class="tab-label-pesquisatv">Incluído / Info</label>
+                            </div>
+
+                            <div class="tab-content-pesquisatv content-1-pesquisatv">
+                                <h3 class="titulo-destaque-pesquisatv">Destaques da Experiência</h3>
+                                <p>Descubra a "Ilha dos Deuses". Este retiro combina bem-estar com exploração cultural.</p>
+                            </div>
+
+                            <div class="tab-content-pesquisatv content-2-pesquisatv">
+                                <div class="timeline-pesquisatv">
+                                    <div class="timeline-item-pesquisatv">
+                                        <span class="day-title-pesquisatv">Dia 1-4: </span>
+                                        Yoga matinal, visita a templos e mercados locais.
+                                    </div>
+                                    <div class="timeline-item-pesquisatv">
+                                        <span class="day-title-pesquisatv">Dia 5-9: </span>
+                                        Praia, Surf e Jantar de marisco no calhau.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-content-pesquisatv content-3-pesquisatv">
+                                <ul class="check-list-pesquisatv">
+                                    <li class="check-item-pesquisatv">Alojamento em Villas Privadas</li>
+                                    <li class="check-item-pesquisatv">Aulas de Yoga Diárias</li>
+                                    <li class="check-item-pesquisatv">Massagens Madeirense (x3)</li>
+                                    <li class="cross-item-pesquisatv">Bebidas Alcoólicas</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="suggestions-pesquisatv">
+                            <span class="suggestions-title-pesquisatv">Quem viu isto também gostou:</span>
+                            <div class="suggestions-grid-pesquisatv">
+                                <div class="mini-card-pesquisatv">Cabo Girão</div>
+                                <div class="mini-card-pesquisatv">Calheta</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </main>
+</body>
+</html>

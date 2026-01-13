@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Melhores experiencias</title>
+</head>
+
+<body class="para_ver">
+    <!-- Pesquisa/Lista/Detalhe(destaques, descrição, itinerário, incluido no serviço , informações e outras sugestões)/Adicionar Compra ou Favoritos -->
+    
+
+    <!-- BARRA DE PESQUISA LUGARES/ATIVIDADES/DESTINO FICTCIA ; NãO APRESENTARA RESULTADOS-->
+
+    <div class="search-bar">
+        <form action="lista.html" method="get" class="search-form" aria-label="Pesquisa de destinos">
+            <input type="search" name="q" placeholder="Pesquisar destino, tour ou atividade..." aria-label="Pesquisar destinos">
+            <button type="submit"><a href="../pagina_erro.html">🔍</a></button>
+        </form>
+    </div>
+<!-- SECÇÃO LISTA -->
+    <main class="detalhes">
+        <section class="container-ver">
+        <h1 class="titulo-ver">Melhores Experiencias</h1>
+        
+        <h3 id="h3-para-ver">Lista de informações Gerais</h3>
+        <section class="destaques highlights">    
+            <span class="tag">⏱ 9 Horas</span>
+            <span class="tag">🚐 Pick-up Hotel</span>
+            <span class="tag">🍷 Prova Vinhos</span>
+        </section>
+<!-- --------------------------------------------------------- -->
+ <!-- SECÇÃO DETALHES -->
+        <h3>Detalhes</h3>
+<!-- DESTAQUES -->
+        <section class="section-box">
+            <h3>Destaques</h3>
+            <p>Viaje conosco! Aproveite o desconto e aprenda mais sobre a nossa flora.Gastronomia e cultura.
+                 Aventure-se nas nossas tradições!</p>
+        </section>
+<!-- Descrição -->
+
+        <section class="section-box">
+            <h3>Sobre a atividade</h3>
+            <h5>Descrição</h5>
+            <p>Excursão de as pontos turisticos principais com paragem nas melhores restaurantes.</p>
+        </section>
+<!-- INTENERARIO -->
+        <section class="section-box">
+            <h3>Itinerário</h3>
+            <div class="timeline-item">
+                <div class="time">08:30</div>
+                <div>Recolha no Hotel </div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">10:30</div>
+                <div>Primeira Paragem: Cabo Girão</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">13:00</div>
+                <div>Almoço Regional nem Porto Moniz</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">15:00</div>
+                <div>Sáida do Caniçal</div>
+            </div>
+        </section>
+<!-- O QUE ESTA INCLUIDO NO PREÇO -->
+        <section class="section-box">
+            <h3>Inclusões</h3>
+            <div class="included-list">
+                <div><span class="check">✔</span> Almoço</div>
+                <div><span class="check">✔</span> Guia Profissional</div>
+                <div><span class="check">✔</span> Entradas</div>
+                <div><span class="cross">✘</span> Gorjetas</div>
+            </div>
+        </section>
+        <section class="section-box">
+            <h3>Também pode gostar (Outras Sugestões)</h3>
+            <section class="suggestions">
+                <div class="suggestion-card">Tour Autocarros Norte<br><strong>45€</strong></div>
+                <div class="suggestion-card">Degustação<br><strong>30€</strong></div>
+                <div class="suggestion-card">Bailinho <br><strong>25€</strong></div>
+            </section>
+        </section>
+<!-- INFORMAÇÕES -->
+        <section class="section-box">
+            <h3>Informações</h3>
+            <section class="suggestions">
+                <div class="suggestion-card">Roupa Confortável<br><strong>Calçado👟</strong></div>
+                <div class="suggestion-card">Temperatura Média<br><strong>21ºC</strong>🌡️</div>
+                <div class="suggestion-card">Nº de Pessoas por escursão:<br><strong>30👥</strong></div>
+            </section>
+        </section>
+    </div>
+<!-- OUTRAS SUGESTÕES -->
+    <div class="sticky-footer">
+        <div>
+            <small>Preço por pessoa</small><br>
+          <p class="p-ver">85,00€</p>  <strong class="font-lg"></strong>
+        </div>
+<!-- Footer que acompanha o scroll da página , Adicionar FAVORITOS ADIICIONAR AO CARRINHO  -->
+        
+        <div class="purchase-fav-button">
+            <input type="checkbox" id="fav-toggle" class="fav-checkbox" aria-hidden="true">
+            <label for="fav-toggle" class="botao-ver" aria-label="Adicionar aos favoritos"></label>
+            <form action="/carrinho.html" method="get" class="add-cart-form">
+                <button type="submit" class="btn-main">Adicionar ao Carrinho</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

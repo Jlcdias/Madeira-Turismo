@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Recibos de Pagamentos</title>
+</head>
+<!-- TODOS OS BOTÕES ESTÃO COLOCADOS MERAMENTE PARA ESTILOS VISUAIS E RETORNAM O INICIO DA PAGINA OU NÃO REAGEM, EXETO OS QUE ESTÃO COMENTADAS ABAIXO -->
+<body id="recebpaga">
+
+    <header class="header-hero-recebpaga">
+        <h1 class="titulo-recebpaga">Pagamentos & Faturas</h1>
+        <p class="subtitulo-recebpaga">Consulte o histórico de transações e descarregue os seus recibos.</p>
+    </header>
+
+    <main class="container-main-recebpaga">
+
+        <section class="stats-grid-recebpaga">
+            <div class="stat-card-recebpaga">
+                <span class="stat-label-recebpaga">Total Gasto (Ano)</span>
+                <span class="stat-value-recebpaga">€ 4,350.00</span>
+            </div>
+            <div class="stat-card-recebpaga">
+                <span class="stat-label-recebpaga">Última Compra</span>
+                <span class="stat-value-recebpaga">15 Out</span>
+            </div>
+            <div class="stat-card-recebpaga">
+                <span class="stat-label-recebpaga">Faturas Pendentes</span>
+                <span class="stat-value-recebpaga text-verde-recebpaga">0</span>
+            </div>
+        </section>
+
+        <div class="list-header-recebpaga">
+            <h2 class="titulo-lista-recebpaga">Histórico de Transações</h2>
+            <button class="btn-filtro-recebpaga">Filtrar: Últimos 6 meses ▼</button>
+        </div>
+
+        <div class="payment-list-recebpaga">
+            <!-- cabeçalho fe recibo fechado -->
+            <div class="wrapper-item-recebpaga">
+                <input type="checkbox" id="rec-1" class="toggle-details-recebpaga">
+                
+                <label for="rec-1" class="header-item-recebpaga">
+                    <div class="icon-box-recebpaga">🦁</div>
+                    
+                    <div class="info-box-recebpaga">
+                        <span class="nome-produto-recebpaga">Jipes (x2)</span>
+                        <span class="id-transacao-recebpaga">ID: #TX-9821</span>
+                    </div>
+
+                    <div class="date-box-recebpaga">15 Out 2023</div>
+
+                    <div class="price-box-recebpaga">
+                        € 500.00
+                        <!-- FAZ PARTE DA ANIMAÇÃO ABAIXO PARA PODER APARECER O RECIBO FALSO -->
+                        <span class="status-badge-recebpaga status-pago-recebpaga">Pago</span>
+                    </div>
+                    <!-- SETA ANIMADA QUE ABRE UM RECIBO FALSO COM UM TRANSFORM ROTATE -->
+                    <div class="arrow-icon-recebpaga">▼</div>
+                </label>
+                <!-- RECIBOS FALSOS QUANDO CHECKED FAZ O HEIGHT DESTA DIV SER DE 600PX, CASO CONTRARIO CONTINUA A O COMO INICIALMENTE DEFENIDA-->
+                <div class="details-panel-recebpaga">
+                    <div class="content-details-recebpaga">
+                        
+                        <div class="paper-invoice-recebpaga">
+                            <div class="invoice-header-recebpaga">
+                                <div class="invoice-logo-recebpaga">TURISMO </div>
+                                <div>Recibo Oficial #TX-9821</div>
+                                <small>15 Outubro 2023 - 14:30</small>
+                            </div>
+
+                            <div class="invoice-row-recebpaga">
+                                <span>Cliente:</span>
+                                <span>João Dias</span>
+                            </div>
+                            <div class="invoice-row-recebpaga">
+                                <span>NIF:</span>
+                                <span>123 456 789</span>
+                            </div>
+                            <div class="invoice-row-recebpaga">
+                                <span>Método:</span>
+                                <span>VISA **** 4242</span>
+                            </div>
+
+                            <hr class="invoice-separator-recebpaga">
+
+                            <div class="invoice-row-recebpaga">
+                                <span>Jipes (2x Adultos)</span>
+                                <span>€ 500.00</span>
+                            </div>
+                            <div class="invoice-row-recebpaga">
+                                <span>Taxas e Impostos (Incl.)</span>
+                                <span>€ 0.00</span>
+                            </div>
+
+                            <div class="invoice-row-recebpaga invoice-total-recebpaga">
+                                <span>TOTAL PAGO</span>
+                                <span>€ 500.00</span>
+                            </div>
+
+                            <a href="#" class="btn-download-recebpaga">⬇ Descarregar PDF</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-item-recebpaga">
+                <input type="checkbox" id="rec-2" class="toggle-details-recebpaga">
+                
+                <label for="rec-2" class="header-item-recebpaga">
+                    <div class="icon-box-recebpaga">🍝</div>
+                    
+                    <div class="info-box-recebpaga">
+                        <span class="nome-produto-recebpaga">Workshop Culinária Regional</span>
+                        <span class="id-transacao-recebpaga">ID: #TX-4500</span>
+                    </div>
+
+                    <div class="date-box-recebpaga">22 Set 2023</div>
+
+                    <div class="price-box-recebpaga">
+                        € 340.00
+                        <span class="status-badge-recebpaga status-pago-recebpaga">Pago</span>
+                    </div>
+
+                    <div class="arrow-icon-recebpaga">▼</div>
+                </label>
+
+                <div class="details-panel-recebpaga">
+                    <div class="content-details-recebpaga">
+                        
+                        <div class="paper-invoice-recebpaga">
+                            <div class="invoice-header-recebpaga">
+                                <div class="invoice-logo-recebpaga">TURISMO CSS</div>
+                                <div>Recibo Oficial #TX-4500</div>
+                                <small>22 Setembro 2023 - 09:15</small>
+                            </div>
+
+                            <div class="invoice-row-recebpaga">
+                                <span>Método:</span>
+                                <span>MB Way</span>
+                            </div>
+
+                            <hr class="invoice-separator-recebpaga">
+
+                            <div class="invoice-row-recebpaga">
+                                <span>Workshop Culinária (2x)</span>
+                                <span>€ 340.00</span>
+                            </div>
+
+                            <div class="invoice-row-recebpaga invoice-total-recebpaga">
+                                <span>TOTAL PAGO</span>
+                                <span>€ 340.00</span>
+                            </div>
+
+                            <a href="#" class="btn-download-recebpaga">⬇ Descarregar PDF</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-item-recebpaga">
+                <input type="checkbox" id="rec-3" class="toggle-details-recebpaga">
+                
+                <label for="rec-3" class="header-item-recebpaga">
+                    <div class="icon-box-recebpaga icon-grey-recebpaga">✕</div>
+                    
+                    <div class="info-box-recebpaga">
+                        <span class="nome-produto-recebpaga text-riscado-recebpaga">Seguro Viagem Extra</span>
+                        <span class="id-transacao-recebpaga">ID: #TX-1100</span>
+                    </div>
+
+                    <div class="date-box-recebpaga">10 Ago 2023</div>
+
+                    <div class="price-box-recebpaga">
+                        € 50.00
+                        <span class="status-badge-recebpaga status-refund-recebpaga">Reembolsado</span>
+                    </div>
+
+                    <div class="arrow-icon-recebpaga">▼</div>
+                </label>
+
+                <div class="details-panel-recebpaga">
+                    <div class="content-details-recebpaga">
+                        <p class="text-desc-recebpaga">Este valor foi devolvido para o cartão original no dia 12 Ago 2023.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
